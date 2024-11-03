@@ -1,121 +1,135 @@
 :root {
-  --blue: #1c5289;
-  --white: #ffffff;
-  --brown: rgba(117, 69, 40, 0.607);
+  --offwhite: rgb(255, 233, 193);
+  --dark-blue: rgb(64, 64, 139);
+  --dark-red: rgb(81, 24, 24);
 }
 
 body {
-  font-family: sans-serif;
-  font-size: large;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  color: var(--white);
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
+  background-image: url("../img/background3.jpg");
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.496);
-  background-blend-mode: multiply;
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: var(--offwhite);
+  font-size: 1em;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .container {
-  display: flex;
-  /* justify-content: center; */
   margin: 0 auto;
-  width: 60vw;
   height: 100vh;
-  background: rgba(105, 114, 249, 0.092);
-  border-left: solid 1px var(--brown);
-  border-right: solid 1px var(--brown);
-  padding: 10px 50px;
 }
 
-.nav ul {
+.nav-bar .nav-list-items {
   list-style-type: none;
-  display: flex;
-  gap: 20px;
-  color: white;
-  letter-spacing: 3px;
 }
-.nav ul li a {
-  color: white;
+
+.nav-bar .nav-list-items a {
   text-decoration: none;
+  color: antiquewhite;
+  text-shadow: 1 1px 2px rgb(206, 206, 206);
+  font-size: 1.2em;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+.hover:hover {
+  border-bottom: var(--dark-red) solid 2px;
+  box-shadow: 0 0 10px var(--dark-red);
 }
 
-.nav ul li a:hover {
-  border-bottom: #1c5289 solid 5px;
-  padding-bottom: 5px;
-  letter-spacing: 2px;
-}
-
-.nav {
+.nav-bar ul {
   display: flex;
-  justify-content: space-between;
-}
-
-.nav h3,
-ul {
+  padding-inline-start: 0;
   margin: 0;
-}
-.hero {
-  padding: 100px 50px 0 60px;
-}
-.hero-title {
-  display: flex;
-  justify-content: left;
-  font-size: 3.6em;
-  margin-bottom: 0;
-  line-height: 1.11em;
+  gap: 20px;
+  font-weight: 400;
 }
 
-.bg {
+/* move the nav items to left */
+.nav-bar .nav-list-items:nth-child(2) {
+  margin-left: auto;
+}
+
+.nav-bar {
+  padding: 10px;
+}
+
+.hero {
+  margin: 50px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.left-heading {
+  color: var(--dark-blue);
   width: 50%;
   text-align: right;
+  font-weight: 600;
   background: linear-gradient(
     to right,
-    rgba(38, 30, 30, 0.042),
-    rgba(70, 43, 43, 0.681)
+    rgba(0, 0, 0, 0.6),
+    rgba(60, 60, 72, 0.407)
   );
-  padding: 0 10px;
-  color: #1c5289;
-  text-shadow: 1px 1px 5px black;
-  font-weight: bolder;
-  /* margin-right: px; */
+  padding-right: 2px;
+  padding: 3px;
 }
 
-.hero-decription {
-  width: 70%;
-  margin: 20px auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2em;
-  /* border-left: 2px solid var(--blue);
-  border-right: 2px solid var(--blue); */
-  color: grey;
-  padding: 10px;
+.right-heading {
+  width: 50%;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  padding: 3px;
+  font-weight: 200;
+  text-shadow: 0 0 5px white;
+}
+
+.bootcamp {
+  font-family: changa;
   text-align: center;
+  font-weight: 800;
+  font-size: 1.2em;
+  padding-left: 10px;
+  letter-spacing: 15px;
+  color: white;
+  box-shadow: 0 0 10px var(--dark-red);
+  text-shadow: 0 0 1px white;
+  width: fit-content;
+  margin-bottom: 100px;
 }
 
-.sign-up-btn,
-.email {
-  color: white;
-  padding: 1em;
-  font-size: 1em;
-  font-weight: bold;
+.centralize {
+  margin-top: 10px;
+  margin-left: 465px;
+}
+form {
+  display: flex;
+  width: 44.5%;
+}
+
+#email {
+  width: 70%;
   background: none;
   border: none;
+  border: 2px solid var(--dark-blue);
+  padding: 20px;
+  font-size: 1.5em;
+  color: aliceblue;
 }
 
-.sign-up {
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid var(--blue);
-  width: 70%;
-  margin: 70px auto;
-  border-radius: 30px;
-}
-
-.sign-up-btn {
-  border-left: 2px solid var(--blue);
-  padding-left: 55px;
-  border-radius: 30px;
+button {
+  border: none;
+  padding: 20px;
+  margin-left: auto;
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 1.5em;
+  width: 30%;
 }

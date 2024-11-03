@@ -4,58 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Project Management, Business Analysis & Software Development Training Bootcamp
+      Software Development, Business Analysis & Project Management Skills
+      Bootcamp
     </title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="nav">
-          <h3>PBS</h3>
-          <ul>
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Services</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Sign-up</a></li>
-          </ul>
-        </nav>
-        <div class="hero">
-          <div class="hero-title">
-            <div class="bg">SOFTWARE</div>
-            <div class="heading">Development</div>
-          </div>
-          <div class="hero-title">
-            <div class="bg">PROJECT</div>
-            <div class="heading">Management</div>
-          </div>
-          <div class="hero-title">
-            <div class="bg">BUSINESS</div>
-            <div class="heading">Analysis</div>
-          </div>
+    <!-- navbar -->
+    <nav class="nav-bar">
+      <ul>
+        <li class="nav-list-items"><a href="#" class="logo hover">SBP</a></li>
+        <li class="nav-list-items"><a href="#" class="home hover">Home</a></li>
+        <li class="nav-list-items">
+          <a href="#" class="about hover">About</a>
+        </li>
+        <li class="nav-list-items">
+          <a href="#" class="services hover">Services</a>
+        </li>
+        <li class="nav-list-items">
+          <a href="#" class="contact hover">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-          <p class="hero-decription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            amet inventore dolorum sapiente natus adipisci beatae eligendi odit,
-            tempora asperiores blanditiis, eveniet, quas doloremque quo non a.
-            Tempora, quod aperiam.
-          </p>
-          <form class="sign-up">
-            <input
-              type="email"
-              class="email bd-right"
-              id="email"
-              name="email"
-              placeholder="enter your email here"
-            /><span><button class="sign-up-btn bd-left">SIGN-UP</button></span>
-          </form>
-        </div>
-      </header>
-    </div>
+    <!-- hero area -->
 
-    <main></main>
-    <footer></footer>
+    <section class="hero">
+      <div class="heading">
+        <div class="left-heading">PROJECT</div>
+        <div class="right-heading">Management</div>
+      </div>
+      <div class="heading">
+        <div class="left-heading">BUSINESS</div>
+        <div class="right-heading">Analysis</div>
+      </div>
+      <div class="heading">
+        <div class="left-heading">SOFTWARE</div>
+        <div class="right-heading">Development</div>
+      </div>
+      <div class="bootcamp centralize">IMMERSIVE SKILLS BOOTCAMP</div>
+      <form class="centralize" action="" id="form">
+        <input
+          type="email"
+          id="email"
+          placeholder="enter your email to register"
+        />
+        <button>SUBMIT</button>
+      </form>
+    </section>
 
-    <script src="./assets/scripts/styles.js"></script>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
