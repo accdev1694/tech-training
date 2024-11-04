@@ -1,7 +1,7 @@
 :root {
-  --offwhite: rgb(155, 152, 145);
+  --offwhite: rgb(189, 186, 182);
   --dark-blue: rgb(80, 80, 208);
-  --dark-red: rgb(98, 30, 30);
+  --dark-red: rgb(126, 55, 55);
 }
 
 body {
@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", serif;
   font-weight: 100;
   font-style: normal;
+  position: relative;
 }
 
 .container {
@@ -30,21 +31,23 @@ body {
 .hover {
   text-decoration: none;
   color: var(--offwhite);
-  text-shadow: 1 1px 2px var(--offwhite);
-  font-size: 1.2em;
+  /* text-shadow: 1px 1px 2px rgb(84, 84, 84); */
+  font-size: 1.5em;
   padding: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
+  font-family: changa;
+  font-weight: 600;
 }
 .hover:hover {
-  border-bottom: var(--dark-red) solid 2px;
-  box-shadow: 0 0 10px var(--dark-red);
+  box-shadow: 0 0 2px var(--dark-red);
+  color: var(--dark-red);
 }
 
 .nav-bar ul {
   display: flex;
   padding-inline-start: 0;
   margin: 0;
-  gap: 20px;
+  gap: 10px;
   font-weight: 400;
 }
 
@@ -54,7 +57,14 @@ body {
 }
 
 .nav-bar {
-  padding: 10px;
+  padding: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(54, 52, 52, 0.257),
+    rgba(123, 111, 102, 0.525),
+    rgba(54, 52, 52, 0.257)
+  );
+  border-bottom: 1px solid var(--dark-red);
 }
 
 .hero {
@@ -73,6 +83,8 @@ body {
   font-weight: 700;
   text-shadow: 0 0 3px white;
   color: var(--offwhite);
+  font-family: changa;
+  font-size: 1.2em;
 }
 
 .bootcamp {
@@ -103,6 +115,20 @@ form {
   display: flex;
   width: 45%;
   box-shadow: 1px 1px 5px var(--dark-blue), -1px -1px 5px var(--dark-blue);
+  transition: all 0.3s ease-in-out;
+  animation: shadowPulse 2s infinite alternate;
+}
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 1px 1px 5px var(--dark-blue), -1px -1px 5px var(--dark-blue);
+  }
+  50% {
+    box-shadow: 5px 5px 15px var(--dark-blue), -5px -5px 15px var(--dark-blue);
+  }
+  100% {
+    box-shadow: 1px 1px 5px white, -1px -1px 5px white;
+  }
 }
 
 #email {
@@ -126,6 +152,7 @@ button {
   cursor: pointer;
 }
 button:hover {
+  background-color: rgba(250, 235, 215, 0.145);
   box-shadow: 1px 1px 5px var(--dark-blue), -1px -1px 5px var(--dark-blue);
 }
 
@@ -165,5 +192,60 @@ h2 {
 #to-top {
   width: fit-content;
   font-weight: 600;
-  margin: 0 auto;
+  margin: 0 0 0 75%;
+}
+
+#to-top:hover {
+  background: none;
+}
+
+.floating {
+  position: absolute;
+  opacity: 0.2;
+  width: 200px;
+}
+
+#analysis {
+  top: 250px;
+  left: 300px;
+  rotate: 15deg;
+}
+
+#analytics {
+  top: 500px;
+  right: -60px;
+}
+
+#bracket-square {
+  top: 800px;
+  left: 50px;
+  rotate: -15deg;
+}
+
+#code {
+  top: 1470px;
+  left: 500px;
+  rotate: -15deg;
+}
+
+#code2 {
+  top: 2000px;
+  right: 300px;
+  rotate: -15deg;
+}
+
+#curly-bracket {
+  top: 1500px;
+  right: auto;
+}
+
+#kanban {
+  top: 2700px;
+  right: 200px;
+}
+
+#project-management{
+  bottom: 50px;
+  left: 280px;
+  rotate: 5deg;
 }
