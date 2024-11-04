@@ -1,7 +1,7 @@
 :root {
   --offwhite: rgb(189, 186, 182);
   --dark-blue: rgb(80, 80, 208);
-  --dark-red: rgb(126, 55, 55);
+  --dark-red: rgb(221, 91, 91);
 }
 
 body {
@@ -19,10 +19,7 @@ body {
   position: relative;
 }
 
-.container {
-  margin: 0 auto;
-  height: 100vh;
-}
+
 
 .nav-list-items {
   list-style-type: none;
@@ -31,15 +28,16 @@ body {
 .hover {
   text-decoration: none;
   color: var(--offwhite);
-  /* text-shadow: 1px 1px 2px rgb(84, 84, 84); */
+  text-shadow: 1px 1px 2px rgb(84, 84, 84);
   font-size: 1.5em;
-  padding: 5px;
+  padding: 0 20px;
   letter-spacing: 5px;
   font-family: changa;
   font-weight: 600;
+  border-radius: 5px;
 }
 .hover:hover {
-  box-shadow: 0 0 2px var(--dark-red);
+  box-shadow: 1px 1px 3px var(--dark-red), -1px -1px 3px var(--dark-red);
   color: var(--dark-red);
 }
 
@@ -47,7 +45,7 @@ body {
   display: flex;
   padding-inline-start: 0;
   margin: 0;
-  gap: 10px;
+  /* gap: 10px; */
   font-weight: 400;
 }
 
@@ -67,8 +65,13 @@ body {
   border-bottom: 1px solid var(--dark-red);
 }
 
-.hero {
-  margin: 50px;
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.hero{
+  margin-top: 100px;
 }
 .heading {
   display: flex;
@@ -101,10 +104,10 @@ body {
 }
 
 .header-text {
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: 50px auto;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 200;
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -113,7 +116,7 @@ body {
 form {
   margin: 100px auto;
   display: flex;
-  width: 45%;
+  width: 70%;
   box-shadow: 1px 1px 5px var(--dark-blue), -1px -1px 5px var(--dark-blue);
   transition: all 0.3s ease-in-out;
   animation: shadowPulse 2s infinite alternate;
@@ -132,7 +135,7 @@ form {
 }
 
 #email {
-  width: 70%;
+  width: 60%;
   background: none;
   border: none;
   padding: 20px;
@@ -148,7 +151,7 @@ button {
   color: white;
   font-weight: 800;
   font-size: 1.5em;
-  width: 30%;
+  width: 40%;
   cursor: pointer;
 }
 button:hover {
@@ -157,9 +160,11 @@ button:hover {
 }
 
 .content {
+  margin-top: 100px;
   display: flex;
-  margin: 100px 200px;
-  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  gap: 2%;
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.04),
@@ -169,83 +174,103 @@ button:hover {
 }
 
 .text-content {
-  width: 50%;
+  width: 40%;
   font-weight: 300;
   font-size: 1.2em;
   color: var(--offwhite);
 }
 
 .image {
-  width: 50%;
+  width: 40%;
   height: 430px;
   border-radius: 50px;
   box-shadow: 0 0 10px var(--dark-red);
 }
 h2 {
   margin-top: 0;
+  padding: 0;
   font-family: changa;
   text-align: right;
-  line-height: 20px;
   color: white;
 }
 
 #to-top {
   width: fit-content;
   font-weight: 600;
-  margin: 0 0 0 75%;
+  margin: 20px 0 0 75%;
 }
 
 #to-top:hover {
   background: none;
 }
 
+/* aside elements */
 .floating {
   position: absolute;
   opacity: 0.2;
-  width: 200px;
+  width: 15%;
+  z-index: -1;
 }
 
 #analysis {
-  top: 250px;
-  left: 300px;
+  top: 7%;
+  left: 20%;
   rotate: 15deg;
 }
 
 #analytics {
-  top: 500px;
-  right: -60px;
+  top: 15%;
+  right: 15%;
 }
 
 #bracket-square {
-  top: 800px;
-  left: 50px;
+  top: 35%;
+  left: 13%;
   rotate: -15deg;
 }
 
 #code {
-  top: 1470px;
-  left: 500px;
-  rotate: -15deg;
+  top: 47%;
+  left: 45%;
+  rotate: 15deg;
 }
 
 #code2 {
-  top: 2000px;
-  right: 300px;
+  top: 55%;
+  right: 7%;
   rotate: -15deg;
 }
 
 #curly-bracket {
-  top: 1500px;
-  right: auto;
+  top: 71%;
+  left: 9%;
 }
 
 #kanban {
-  top: 2700px;
-  right: 200px;
+  top: 71%;
+  right: 16%;
 }
 
-#project-management{
-  bottom: 50px;
-  left: 280px;
+#project-management {
+  bottom: 0.5%;
+  left: 15%;
   rotate: 5deg;
+}
+
+@media (max-width: 576px) {
+  .hover {
+    font-size: 1.2em;
+    padding: 0 8px;
+    letter-spacing: normal;
+  }
+  .heading {
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .floating{
+    width: 100px;
+  }
+  
 }
