@@ -181,7 +181,7 @@ button:hover {
 .image {
   width: 40%;
   height: 430px;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0 0 10px var(--dark-red);
 }
 h2 {
@@ -257,8 +257,8 @@ h2 {
 
 @media (max-width: 576px) {
   .hover {
-    font-size: 1.2em;
-    padding: 0 5px;
+    font-size: 1.1em;
+    padding: 0 3px;
     letter-spacing: normal;
   }
   .hero {
@@ -269,35 +269,37 @@ h2 {
   .heading {
     flex-direction: column;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 10px;
   }
   .left-heading {
     font-size: 1.7em;
-    line-height: 50px;
+    line-height: 40px;
   }
 
   .bootcamp {
-    font-size: 1.2em;
-    width: 100%;
+    font-size: 1em;
     padding: 5px;
-    margin-top: 30px;
-    font-weight: 200;
-    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 20px;
   }
-
+form{
+  margin-top: 30px;
+}
   .header-text,
   form {
     width: 100%;
   }
   #email {
-    width: 70%;
-    font-size: 1.2em;
+    width: 60%;
+    font-size: 1em;
+    padding-left: 10px;
   }
 
   button {
-    font-size: 1.1em;
-    width: 30%;
+    font-size: 1em;
+    width: 40%;
   }
   .content {
     flex-direction: column;
@@ -310,7 +312,7 @@ h2 {
     text-align: center;
   }
   .image {
-    height: 300px;
+    height: 250px;
     margin-top: 50px;
   }
 
