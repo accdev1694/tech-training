@@ -98,7 +98,7 @@ body {
   color: white;
   width: fit-content;
   margin: 30px auto 50px auto;
-  box-shadow: 1px 1px 5px var(--dark-blue), -1px -1px 5px var(--dark-blue);
+  text-shadow: 5px 5px 10px var(--dark-blue), -5px -5px 10px var(--dark-blue);
 }
 
 .header-text {
@@ -195,7 +195,7 @@ h2 {
 #to-top {
   width: fit-content;
   font-weight: 600;
-  margin: 20px 0 0 65%;
+  margin: 10px 0 0 65%;
 }
 
 #to-top:hover {
@@ -303,6 +303,7 @@ form{
   }
   .content {
     flex-direction: column;
+    margin-top: 50px;
   }
 
   .text-content,
@@ -312,12 +313,11 @@ form{
     text-align: center;
   }
   .image {
-    height: 250px;
-    margin-top: 50px;
+    height: 230px;
   }
 
-  #services .image {
-    margin: 0 auto 50px auto;
+  .image {
+    margin: 0 auto 30px auto;
   }
 
   .floating {
